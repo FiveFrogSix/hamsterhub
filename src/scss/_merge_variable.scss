@@ -1,0 +1,9 @@
+$custom-colors: (
+  "white":  $white,
+  "yellow": $yellow
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$accordion-button-icon: url("data:image/svg+xml,<svg  viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M13.9436 0.400024H1.25597C0.875419 0.400024 0.662928 0.753253 0.8986 0.994399L7.24243 7.4612C7.42402 7.6463 7.77366 7.6463 7.95718 7.4612L14.301 0.994399C14.5367 0.753253 14.3242 0.400024 13.9436 0.400024Z' fill='black' /></svg>");
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg  viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M13.9436 0.400024H1.25597C0.875419 0.400024 0.662928 0.753253 0.8986 0.994399L7.24243 7.4612C7.42402 7.6463 7.77366 7.6463 7.95718 7.4612L14.301 0.994399C14.5367 0.753253 14.3242 0.400024 13.9436 0.400024Z' fill='black' /></svg>");

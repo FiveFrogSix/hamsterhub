@@ -1,0 +1,70 @@
+
+@for $i from 8 through 40 {
+  $value: ( #{$i}px: #{$i}px );
+  $font-sizes: map-merge($font-sizes, $value);
+}
+
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        bold: $font-weight-bold,
+        semibold: $font-weight-semibold,
+        bolder: $font-weight-bolder,
+        500: 500
+      )
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      responsive: true,
+      class: fs,
+      values: $font-sizes
+    ),
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      responsive: true,
+      values: (
+        null: $box-shadow,
+        sma: $box-shadow-sm,
+        lar: $box-shadow-lg,
+        none: none,
+      )
+    ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      responsive: true,
+      local-vars: (
+        "bg-opacity": 1
+      ),
+      values: map-merge(
+        $utilities-bg-colors,
+        (
+          "transparent": transparent
+        )
+      )
+    ),
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    )
+  )
+);

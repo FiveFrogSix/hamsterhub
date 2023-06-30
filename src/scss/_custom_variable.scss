@@ -1,0 +1,119 @@
+$blue: #FF7538;
+$yellow: #FFE056;
+$navy: #00294F;
+$white: #FFFFFF;
+$white2: #F0F0F0;
+$bluesky: #2DB4FF;
+$dark2: #383838;
+$grey1: #434343;
+$grey2: #E9E9E9;
+$dark3: #464646;
+$yellow: #F4CF1F;
+
+
+
+
+$gcolors: (
+  "hub":     linear-gradient(180deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
+  "roblox":     linear-gradient(180deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
+  "apps":    linear-gradient(180deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
+  "python":     linear-gradient(180deg, #00D3D3 0%, #AEF3F3 23.23%, #DDFAFA 48.75%, #E9FEFE 75.83%, #F6F5FA 99.66%),
+  "extra":     linear-gradient(180deg, #198FD3 0%, #71C0F1 23.75%, #A3D3F0 52.4%, #DAF1FF 78.96%, #F6F5FA 99.66%)
+) !default;
+
+$gcolorsBottom: (
+  "hub":     linear-gradient(0deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
+  "roblox":     linear-gradient(0deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
+  "apps":    linear-gradient(0deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
+  "python":     linear-gradient(0deg, #00D3D3 0%, #AEF3F3 23.23%, #DDFAFA 48.75%, #E9FEFE 75.83%, #F6F5FA 99.66%),
+  "extra":     linear-gradient(0deg, #198FD3 0%, #71C0F1 23.75%, #A3D3F0 52.4%, #DAF1FF 78.96%, #F6F5FA 99.66%)
+) !default;
+
+
+
+// ส่วนนี้ชื่อ refer ถึง route
+$btncolors: (
+  "roblox":     $blue,
+  "apps":    #05A8FA,
+  "python":     $bluesky,
+  "extra":     #8DFFA6
+) !default;
+
+// start ตัวหนังสือตรง level เฉพาะ
+$textbtnPrimarycolors: (
+  "roblox":     $blue,
+  "python":     $bluesky,
+  "apps":    $dark2,
+  "extra":     $dark2
+) !default;
+
+$textbtnInvertcolors: (
+  "roblox":     #fff,
+  "python":     #fff,
+  "apps":    $dark2,
+  "extra":     $dark2
+) !default;
+
+// end ตัวหนังสือตรง level เฉพาะ
+
+$textbtncolors: (
+  "roblox":     #fff,
+  "python":     $dark2,
+  "apps":    #fff,
+  "extra":     #fff
+) !default;
+// ----------------------------------------------------------------
+
+$navtextmenucolors: (
+  "hub": #FFE056,
+  "roblox":     $blue,
+  "apps":   #FA00FF,
+  "python":     $bluesky,
+  "extra":     #8DFFA6,
+  "brown": #353429
+) !default;
+
+$navtextmenuWhite: (
+  "hub": #FFFFFF,
+  "roblox":     #FFFFFF,
+  "apps":   #FFFFFF,
+  "python":     #FFFFFF,
+  "extra":     #FFFFFF,
+  "brown": #353429
+) !default;
+
+$textmenucolors: (
+  "hub": #FFE056,
+  "roblox":     $blue,
+  "apps":   #CCCCCC,
+  "python":     $bluesky,
+  "extra":     #8DFFA6,
+  "brown": #353429
+) !default;
+
+$accordcolor: (
+  "hub": #FFE056,
+  "roblox":     $blue,
+  "apps":   #05A8FA,
+  "python":     $bluesky,
+  "extra":     #08B66D,
+) !default;
+
+
+$font-sizes-px: (
+  "12px": 12px,
+  "14px": 14px,
+  "16px": 16px,
+  "18px": 18px,
+  "20px": 20px,
+  "22px": 22px,
+  "24px": 24px,
+  "26px": 26px,
+  "28px": 28px,
+  "30px": 30px,
+  "32px": 32px
+);
+
+
+
+

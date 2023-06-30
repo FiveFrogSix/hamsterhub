@@ -1,0 +1,9 @@
+<script setup>
+    const props = defineProps(['color'])
+</script>
+<template>
+    <svg class="align-middle" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.76666 9.99166H8.60833M3.76666 12.0667H6.1875M11.375 1H1.69167C1.50822 1 1.3323 1.07287 1.20258 1.20258C1.07287 1.3323 1 1.50822 1 1.69167V14.1417C1 14.3251 1.07287 14.501 1.20258 14.6307C1.3323 14.7605 1.50822 14.8333 1.69167 14.8333H11.375C11.5584 14.8333 11.7344 14.7605 11.8641 14.6307C11.9938 14.501 12.0667 14.3251 12.0667 14.1417V1.69167C12.0667 1.50822 11.9938 1.3323 11.8641 1.20258C11.7344 1.07287 11.5584 1 11.375 1Z" :stroke="props.color" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3.7666 3.76668H8.60826V7.22501H3.7666V3.76668Z" :stroke="props.color" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</template>

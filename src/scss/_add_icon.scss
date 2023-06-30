@@ -1,0 +1,21 @@
+
+i {
+    &.icon-left-arrow {
+        content: url("../assets/svg/level-arrow-left-white.svg");
+    }
+    &.icon-right-arrow {
+        content: url("../assets/svg/level-arrow-right-white.svg");
+    }
+    &.icon-left-arrow-dark {
+        content: url("../assets/svg/level-arrow-left-dark.svg");
+    }
+    &.icon-right-arrow-dark {
+        content: url("../assets/svg/level-arrow-right-dark.svg");
+    }
+    &.icon-note {
+        content: url("../assets/svg/note.svg");
+    }
+    &.right-arrow-footer {
+        content: url("../assets/svg/right-arrow-footer.svg");
+    }
+}
