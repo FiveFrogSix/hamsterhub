@@ -94,7 +94,7 @@ const redirectPage = (action) => {
                     <button :class="`btn-page-${params.courseTypeName}`" class="btn btn-end-level w-100"
                         @click="redirectPage(`next`)">
                         <span class="me-2"> Level {{ parseInt(current) + 1 }} </span>
-                        <i :class="`icon-right-arrow${ ['apps', 'extra'].includes(params.courseTypeName) ? '-dark' : ''} align-middle`"></i>
+                        <i :class="`icon-right-arrow${ ['extra','python'].includes(params.courseTypeName) ? '-dark' : ''} align-middle`"></i>
                     </button>
                 </div>
             </div>

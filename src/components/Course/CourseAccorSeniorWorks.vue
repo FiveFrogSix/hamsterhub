@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import { onBeforeRouteUpdate, useRoute } from "vue-router"
 import { useConfigStore } from "@/stores/config.js"
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination, Autoplay } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import BookIcon from "@/components/Icon/BookIcon.vue"
 
 const configStore = useConfigStore()
@@ -12,7 +12,7 @@ const route = useRoute()
 const params = ref(route.params)
 const color = ref(null)
 
-const modules = [Pagination, Autoplay]
+const modules = [Pagination, Autoplay, Navigation]
 const breakpoints = ref(configStore.getSwiper.breakpoints)
 const pagination = ref(configStore.getSwiper.paginations)
 const autoplay = ref(configStore.getSwiper.autoplay)
@@ -57,8 +57,7 @@ const actionAboutAccordion = (e) => {
                             <div class="accordion-body p-0 px-md-5">
                                 <hr :class="`mb-3 hr-${params.courseTypeName}`">
                                 <div class="px-3 px-md-0 pb-md-2">
-                                    <swiper :slides-per-view="1" :space-between="0" :modules="modules" :pagination="pagination"
-                                        :breakpoints="breakpoints" :autoplay="autoplay">
+                                    <swiper :slides-per-view="1" :space-between="0" :modules="modules" :pagination="pagination" :breakpoints="breakpoints" :autoplay="autoplay">
                                         <swiper-slide v-for="item in 10">
                                             <div class="card card-custom shadow-md-sma border border-0 h-100 mb-md-5">
                                                 <img src="@/assets/imgs/Video.png" class="card-img-top"

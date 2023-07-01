@@ -37,9 +37,9 @@ export const useConfigStore = defineStore('config', {
             pageColor: {
                 "hub": "#FFE056",
                 "roblox": "#FF7538",
-                "apps": "#05A8FA",
-                "python": "#2DB4FF",
-                "extra": "#08B66D",
+                "apps": "#0089D4",
+                "python": "#8DFFA6",
+                "extra": "#60CFFF",
             },
             flip: true
         }

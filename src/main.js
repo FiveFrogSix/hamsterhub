@@ -1,5 +1,6 @@
 // import 'vue3-carousel/dist/carousel.css'
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import '@/scss/styles.scss';

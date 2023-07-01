@@ -4,72 +4,93 @@ $navy: #00294F;
 $white: #FFFFFF;
 $white2: #F0F0F0;
 $bluesky: #2DB4FF;
+$blue3: #05A8FA;
+$blue4: #60CFFF;
+$blue5: #0089D4;
+$greenlight: #8DFFA6;
 $dark2: #383838;
+$dark3: #373737;
 $grey1: #434343;
 $grey2: #E9E9E9;
 $dark3: #464646;
 $yellow: #F4CF1F;
 
 
+// "apps":    linear-gradient(180deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
+// background: linear-gradient(180deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%);
+// background: linear-gradient(180deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%);
 
 
 $gcolors: (
   "hub":     linear-gradient(180deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
   "roblox":     linear-gradient(180deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
-  "apps":    linear-gradient(180deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
-  "python":     linear-gradient(180deg, #00D3D3 0%, #AEF3F3 23.23%, #DDFAFA 48.75%, #E9FEFE 75.83%, #F6F5FA 99.66%),
-  "extra":     linear-gradient(180deg, #198FD3 0%, #71C0F1 23.75%, #A3D3F0 52.4%, #DAF1FF 78.96%, #F6F5FA 99.66%)
+  "apps":    linear-gradient(180deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
+  "python":     linear-gradient(180deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
+  "extra":     linear-gradient(180deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%)
 ) !default;
 
 $gcolorsBottom: (
   "hub":     linear-gradient(0deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
   "roblox":     linear-gradient(0deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
-  "apps":    linear-gradient(0deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
-  "python":     linear-gradient(0deg, #00D3D3 0%, #AEF3F3 23.23%, #DDFAFA 48.75%, #E9FEFE 75.83%, #F6F5FA 99.66%),
-  "extra":     linear-gradient(0deg, #198FD3 0%, #71C0F1 23.75%, #A3D3F0 52.4%, #DAF1FF 78.96%, #F6F5FA 99.66%)
+  "apps":    linear-gradient(0deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
+  "python":     linear-gradient(0deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
+  "extra":     linear-gradient(0deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%)
 ) !default;
 
-
-
-// ส่วนนี้ชื่อ refer ถึง route
+// เปลี่ยนสีปุ่มภายในเนื้อหา + สีอื่นๆ
 $btncolors: (
   "roblox":     $blue,
-  "apps":    #05A8FA,
-  "python":     $bluesky,
-  "extra":     #8DFFA6
+  "apps":    $blue5,
+  "python":     $greenlight,
+  "extra":     $blue4
 ) !default;
 
-// start ตัวหนังสือตรง level เฉพาะ
+// เปลี่ยนสีเส้น accorian
+$accordcolor: (
+  "hub": #FFE056,
+  "roblox":     $blue,
+  "apps":   $blue5,
+  "python":     $greenlight,
+  "extra":     $blue4,
+) !default;
+
+// start ตัวหนังสือตรง active level หรือ current level
 $textbtnPrimarycolors: (
   "roblox":     $blue,
-  "python":     $bluesky,
-  "apps":    $dark2,
+  "python":     $dark3,
+  "apps":    $blue5,
   "extra":     $dark2
 ) !default;
 
+// สีปุุ่มตรง next and prev levl
 $textbtnInvertcolors: (
-  "roblox":     #fff,
-  "python":     #fff,
-  "apps":    $dark2,
+  "roblox":     $white,
+  "python":     $dark3,
+  "apps":    $white,
   "extra":     $dark2
 ) !default;
-
 // end ตัวหนังสือตรง level เฉพาะ
 
-$textbtncolors: (
-  "roblox":     #fff,
-  "python":     $dark2,
-  "apps":    #fff,
-  "extra":     #fff
-) !default;
+// // สีปุุ่มตรง active level
+// $textbtncolors: (
+//   "roblox":     $white,
+//   "python":     $dark2,
+//   "apps":    $white,
+//   "extra":     $white
+// ) !default;
+
+
+
+
 // ----------------------------------------------------------------
 
+// สีตรง Nav Bar
 $navtextmenucolors: (
   "hub": #FFE056,
   "roblox":     $blue,
-  "apps":   #FA00FF,
-  "python":     $bluesky,
-  "extra":     #8DFFA6,
+  "apps":   $blue3,
+  "python":     $greenlight,
+  "extra":     $blue4,
   "brown": #353429
 ) !default;
 
@@ -86,18 +107,12 @@ $textmenucolors: (
   "hub": #FFE056,
   "roblox":     $blue,
   "apps":   #CCCCCC,
-  "python":     $bluesky,
+  "python":     $greenlight,
   "extra":     #8DFFA6,
   "brown": #353429
 ) !default;
 
-$accordcolor: (
-  "hub": #FFE056,
-  "roblox":     $blue,
-  "apps":   #05A8FA,
-  "python":     $bluesky,
-  "extra":     #08B66D,
-) !default;
+
 
 
 $font-sizes-px: (
