@@ -18,6 +18,11 @@ const router = createRouter({
           component: HubView,
         },
         {
+          path: 'extra',
+          name: 'Extra',
+          component: ExtraView,
+        },
+        {
           path: ':courseTypeName',
           name: 'Course',
           component: CourseView,

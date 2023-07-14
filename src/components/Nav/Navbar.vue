@@ -5,6 +5,8 @@ import { useConfigStore }from "@/stores/config"
 import Logo from "@/assets/svg/logo.svg"
 import Mouse from "@/assets/svg/mouse.svg"
 import NavItem from "@/components/Nav/Navitem.vue"
+import { onBeforeRouteUpdate } from "vue-router"
+import { Collapse } from 'bootstrap';
 
 const configStore = useConfigStore()
 const addNavClass = ref({
@@ -15,6 +17,18 @@ const addNavClass = ref({
 const addNavBlockClass = ref({
     "d-none": true
 })
+
+// onBeforeRouteUpdate( () => {
+//     console.log("leave");
+//     const collapseElem = document.querySelectorAll(".accordion-collapse .show")
+//     for(let i=0; i<collapseElem.length; i++){
+//         const bsCollapse = new Collapse(collapseElem[i])
+//         bsCollapse.hide()
+
+//     }
+// } )
+
+
 onMounted( () => {
     window.addEventListener('scroll', function(e) {
         // this.scrollPos = window.scrollY; // this in here is undefined 

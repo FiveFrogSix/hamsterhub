@@ -9,6 +9,17 @@
 $utilities: map-merge(
   $utilities,
   (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $custom-colors
+          ),
+        ),
+      ),
+    ),
     "font-weight": (
       property: font-weight,
       class: fw,

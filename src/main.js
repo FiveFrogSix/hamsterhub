@@ -6,6 +6,7 @@ import 'swiper/css/autoplay';
 import '@/scss/styles.scss';
 import "bootstrap";
 import 'animate.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

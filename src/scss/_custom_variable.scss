@@ -1,4 +1,5 @@
 $blue: #FF7538;
+$red: #FF1600;
 $yellow: #FFE056;
 $navy: #00294F;
 $white: #FFFFFF;
@@ -7,67 +8,86 @@ $bluesky: #2DB4FF;
 $blue3: #05A8FA;
 $blue4: #60CFFF;
 $blue5: #0089D4;
+$blue6: #306EDB;
 $greenlight: #8DFFA6;
 $dark2: #383838;
 $dark3: #373737;
 $grey1: #434343;
 $grey2: #E9E9E9;
+$grey3: #F5F5F7;
 $dark3: #464646;
 $yellow: #F4CF1F;
+$lineci: #06C755;
+$lightmain: #F6F5FA;
 
+$zindex-modal-backdrop: 2005;
+$zindex-modal: 2010;
+// Form Change
 
+$input-border-color: $yellow;
+
+// Modal Effect
 // "apps":    linear-gradient(180deg, #FFCDA9 0%, #FCDAC4 27.4%, #FAE2D4 52.92%, #F9E9E2 76.87%, #F6F5FA 99.66%),
 // background: linear-gradient(180deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%);
 // background: linear-gradient(180deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%);
+// "hub":     linear-gradient(180deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
 
 
-$gcolors: (
-  "hub":     linear-gradient(180deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
-  "roblox":     linear-gradient(180deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
-  "apps":    linear-gradient(180deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
-  "python":     linear-gradient(180deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
-  "extra":     linear-gradient(180deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%)
-) !default;
+$bodybgcolor: ("hub": #FFFFFF,
+  "roblox": #F6F5FA,
+  "apps": #F6F5FA,
+  "python": #F6F5FA,
+  "extra": #FFFFFF,
+  "extras": #F6F5FA,
+  ) !default;
 
-$gcolorsBottom: (
-  "hub":     linear-gradient(0deg, #FFD61F 0%, #FFEFA5 23.12%, #FFF5CA 50.21%, #FFFBEC 77.29%, #F6F5FA 99.66%),
-  "roblox":     linear-gradient(0deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
-  "apps":    linear-gradient(0deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
-  "python":     linear-gradient(0deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
-  "extra":     linear-gradient(0deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%)
-) !default;
+$gcolors: ("hub": #FFFFFF,
+  "roblox": linear-gradient(180deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
+  "apps": linear-gradient(180deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
+  "python": linear-gradient(180deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
+  "extra": #FFFFFF,
+  "extras": linear-gradient(180deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%),
+  ) !default;
+
+$gcolorsBottom: ("hub": #FFFFFF,
+  "roblox": linear-gradient(0deg, #00294F 0%, #12A0A9 30%, #A0DDFF 50.31%, #CBE9FF 69.06%, #EAFDFF 86.25%, #F6F5FA 99.66%),
+  "apps": linear-gradient(0deg, #00B775 0%, #A3FFB9 26.87%, #B9FECB 54.48%, #DAF7E4 79.48%, #F6F5FA 99.66%),
+  "python": linear-gradient(0deg, #0089D4 0%, #42A6DC 23.23%, #7EC4EA 48.75%, #B9E6FF 75.83%, #F6F5FA 99.66%),
+  "extra": #FFFFFF,
+  "extras": linear-gradient(0deg, #FE5E5E 0%, #FF8F90 27.4%, #FFBABC 53.96%, #FFE0E2 77.4%, #F6F5FA 99.66%),
+  ) !default;
 
 // เปลี่ยนสีปุ่มภายในเนื้อหา + สีอื่นๆ
-$btncolors: (
-  "roblox":     $blue,
-  "apps":    $blue5,
-  "python":     $greenlight,
-  "extra":     $blue4
-) !default;
+$btncolors: ("roblox": $blue,
+  "apps": $blue5,
+  "python": $greenlight,
+  "extra": $blue4,
+  "extras": $blue4,
+  ) !default;
 
 // เปลี่ยนสีเส้น accorian
-$accordcolor: (
-  "hub": #FFE056,
-  "roblox":     $blue,
-  "apps":   $blue5,
-  "python":     $greenlight,
-  "extra":     $blue4,
+$accordcolor: ("hub": #FFE056,
+  "roblox": $blue,
+  "apps": $blue5,
+  "python": $greenlight,
+  "extra": $blue4,
+  "extras": $blue4,
 ) !default;
 
 // start ตัวหนังสือตรง active level หรือ current level
-$textbtnPrimarycolors: (
-  "roblox":     $blue,
-  "python":     $dark3,
-  "apps":    $blue5,
-  "extra":     $dark2
-) !default;
+$textbtnPrimarycolors: ("roblox": $blue,
+  "python": $dark3,
+  "apps": $blue5,
+  "extra": $dark2,
+  "extras": $dark2,
+  ) !default;
 
 // สีปุุ่มตรง next and prev levl
-$textbtnInvertcolors: (
-  "roblox":     $white,
-  "python":     $dark3,
-  "apps":    $white,
-  "extra":     $dark2
+$textbtnInvertcolors: ("roblox": $white,
+  "python": $dark3,
+  "apps": $white,
+  "extra": $dark2,
+  "extras": $dark2,
 ) !default;
 // end ตัวหนังสือตรง level เฉพาะ
 
@@ -80,43 +100,37 @@ $textbtnInvertcolors: (
 // ) !default;
 
 
-
-
 // ----------------------------------------------------------------
 
 // สีตรง Nav Bar
-$navtextmenucolors: (
-  "hub": #FFE056,
-  "roblox":     $blue,
-  "apps":   $blue3,
-  "python":     $greenlight,
-  "extra":     $blue4,
-  "brown": #353429
-) !default;
+$navtextmenucolors: ("hub": #FFE056,
+  "roblox": $blue,
+  "apps": $blue3,
+  "python": $greenlight,
+  "extra": $blue4,
+  "extras": $blue4,
+  "brown": #353429) !default;
 
-$navtextmenuWhite: (
-  "hub": #FFFFFF,
-  "roblox":     #FFFFFF,
-  "apps":   #FFFFFF,
-  "python":     #FFFFFF,
-  "extra":     #FFFFFF,
-  "brown": #353429
-) !default;
+$navtextmenuWhite: ("hub": #FFFFFF,
+  "roblox": #FFFFFF,
+  "apps": #FFFFFF,
+  "python": #FFFFFF,
+  "extra": #FFFFFF,
+  "extras": #FFFFFF,
+  "brown": #353429) !default;
 
-$textmenucolors: (
-  "hub": #FFE056,
-  "roblox":     $blue,
-  "apps":   #CCCCCC,
-  "python":     $greenlight,
-  "extra":     #8DFFA6,
-  "brown": #353429
-) !default;
+$textmenucolors: ("hub": #FFE056,
+  "roblox": $blue,
+  "apps": #CCCCCC,
+  "python": $greenlight,
+  "extra": #8DFFA6,
+  "extras": #8DFFA6,
+  "brown": #353429) !default;
 
 
 
 
-$font-sizes-px: (
-  "12px": 12px,
+$font-sizes-px: ("12px": 12px,
   "14px": 14px,
   "16px": 16px,
   "18px": 18px,
@@ -126,9 +140,4 @@ $font-sizes-px: (
   "26px": 26px,
   "28px": 28px,
   "30px": 30px,
-  "32px": 32px
-);
-
-
-
-
+  "32px": 32px);

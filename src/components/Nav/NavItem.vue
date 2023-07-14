@@ -16,11 +16,13 @@ onMounted( async () => {
 })
 
 const activeDefault = async () => {
-        const paramsName = params.value.courseTypeName ? params.value.courseTypeName  : "/"
-        const ary = configStore.getNavItems.filter((item) =>  item.url.includes(paramsName))
-        ary[0].acitve = true
-        configStore.updateActiveNavItem(ary[0])
-        changeBg( ary[0].className.toLowerCase() )
+    let paramsName = "/"
+    if ( route.name == "Extra" ) paramsName = "extra"
+    else if ( params.value.courseTypeName ) paramsName = params.value.courseTypeName
+    const ary = configStore.getNavItems.filter((item) =>  item.url.includes(paramsName))
+    ary[0].acitve = true
+    configStore.updateActiveNavItem(ary[0])
+    changeBg( ary[0].className.toLowerCase() )
 }
 
 const classMore = (item) => {
@@ -56,42 +58,6 @@ const actionNavItem = (e, navItem) => {
 const changeBg = (bgName) => {
     document.body.classList.remove("bg-roblox", "bg-apps", "bg-python", "bg-extra", "bg-hub");
     document.body.classList.add(`bg-${bgName}`);
-}
-
-const transformImg = (idRef) => {
-    const hamsterImg = document.querySelector("#HamsterImg")
-
-    // const contentParent = document.querySelector("#contentParent")
-    const menuCustom0 =  document.querySelector("#menuCustom0")
-    const menuCustom0Position = menuCustom0.getBoundingClientRect()
-    const menuCustom1 =  document.querySelector("#menuCustom1")
-    const menuCustom1Position = menuCustom1.getBoundingClientRect()
-    const menuCustom2 =  document.querySelector("#menuCustom2")
-    const menuCustom2Position = menuCustom2.getBoundingClientRect()
-    const menuCustom3 =  document.querySelector("#menuCustom3")
-    const menuCustom3Position = menuCustom3.getBoundingClientRect()
-    const menuCustom4 =  document.querySelector("#menuCustom4")
-    const menuCustom4Position = menuCustom4.getBoundingClientRect()
-    // const menuCustom0Center = menuCustom0Position.left
-
-    const obj = {
-        menuCustom0: menuCustom0Position.left,
-        menuCustom1: menuCustom1Position.left,
-        menuCustom2: menuCustom2Position.left,
-        menuCustom3: menuCustom2Position.left,
-        menuCustom4: menuCustom3Position.left,
-    }
-    const objWidth = {
-        menuCustom0: menuCustom0Position.width,
-        menuCustom1: menuCustom1Position.width,
-        menuCustom2: menuCustom2Position.width,
-        menuCustom3: menuCustom2Position.width,
-        menuCustom4: menuCustom3Position.width,
-    }
-    console.log(obj);
-    console.log(objWidth);
-    // hamsterImg.style.marginLeft = `${obj[idRef]}px`
-    hamsterImg.style.marginLeft = `0px`
 }
 
 </script>
